@@ -1,0 +1,30 @@
+.copyright {
+
+  &__list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    border-top: 1px solid var(--color-accent);
+    padding-top: 20px;
+    gap: 10px;
+
+    @include mobile {
+      justify-content: center
+    }
+  }
+
+  &__text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+  }
+
+  &__text-fw-600 {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 150%;
+    text-align: right;
+    border-bottom: 1px solid var(--color-accent);
+  }
+}

@@ -1,0 +1,41 @@
+.page {
+  position: relative;
+  background: url('../../img/bgc.jpg') no-repeat;
+  background-position: top center;
+  height: auto;
+  color: var(--color-white);
+  z-index: 5;
+
+  &::after {
+    content: '';
+    position: absolute;
+    background: rgba(51, 51, 51, 0.87);
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 10;
+  }
+}
+
+
+.page-bg {
+  background: var(--color-accent);
+  width: 100%;
+  height: 108px;
+}
+
+
+.body.open .page::after {
+  background: rgba(51, 51, 51,);
+}
+
+.body.open .page-bg {
+  background: rgba(51, 51, 51,);
+}
+
+.body.open .page-bg-wrap {
+  background: rgba(51, 51, 51,)
+}

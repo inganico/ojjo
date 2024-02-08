@@ -1,0 +1,196 @@
+.products {
+  padding-top: 99px;
+  padding-bottom: 120px;
+
+  &__text {
+    font-size: 21px;
+    line-height: 140%;
+    text-align: center;
+    margin-bottom: 20px;
+
+    @include desktop-m {
+      font-size: 19px;
+    }
+
+    @include mobile {
+      font-size: 18px;
+    }
+  }
+
+  &__title {
+    font-family: var(--second-family);
+    font-weight: 700;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 62px;
+
+    @include desktop-m {
+      font-size: 24px;
+    }
+
+    @include mobile {
+      font-size: 24px;
+    }
+  }
+
+  &__list-tab {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 22.5px;
+    z-index: 20;
+    margin-bottom: 61px;
+
+    @include desktop-m {
+      justify-content: center;
+    }
+  }
+
+  &__item-tab {
+    position: relative;
+  }
+
+  &__link-tab {
+    position: relative;
+    width: 165px;
+    height: 55px;
+    border: 1px solid #D6D6D6;
+    z-index: 10;
+    display: block;
+    font-weight: 500;
+    font-size: 18px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 17px 0 17px;
+    z-index: 20;
+    background: white;
+    transition: all 0.3s linear;
+
+    @include desktop-m {
+      font-size: 16px;
+    }
+
+    @include table {
+      font-size: 15px;
+    }
+
+    @include mobile {
+      font-size: 14px;
+    }
+
+    &:hover {
+      background: var(--color-accent);
+      color: var(--color-white);
+    }
+  }
+
+  &__item-block {
+    position: absolute;
+    display: block;
+    width: 165px;
+    height: 55px;
+    border: 1px solid #D6D6D6;
+    top: 6px;
+    left: 6px;
+    z-index: 5;
+  }
+
+}
+
+.products__item-tab:hover .products__item-block {
+    visibility: hidden;
+    opacity: 0;
+}
+
+.products {
+
+  &__list-card {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  &__item-card {
+    display: block;
+    max-width: 350px;
+    width: 100%;
+    height: 280px;
+    transition: transform 0.3s ease;
+
+    &:hover {
+      transform: scale(1.03);
+    }
+  }
+
+  &__item-rings {
+    background: url('../../img/card/rings.jpg') no-repeat;
+  }
+
+  &__item-earrings {
+    background: url('../../img/card/earrings.jpg') no-repeat;
+  }
+
+  &__item-suspensions {
+    background: url('../../img/card/bracelets.jpg') no-repeat;
+  }
+
+  &__item-cufflinks {
+    background: url('../../img/card/cufflinks.jpg') no-repeat;
+  }
+
+  &__item-bracelets {
+    background: url('../../img/card/bracelets.jpg') no-repeat;
+  }
+
+  &__item-watch {
+    background: url('../../img/card/watch.jpg') no-repeat;
+  }
+
+  &__link-card {
+    position: relative;
+    bottom: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+    &::after {
+      content: '';
+      position: absolute;
+      background: linear-gradient(180deg, rgba(180, 180, 180, 0) 20.31%, #333 100%);
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 10;
+    }
+  }
+
+  &__link-text {
+    position: absolute;
+    font-weight: 500;
+    font-size: 24px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--color-white);
+    transform: translateY(95px);
+    z-index: 20;
+
+    @include desktop-m {
+      font-size: 20px;
+    }
+
+    @include mobile {
+      font-size: 18px;
+    }
+  }
+}
